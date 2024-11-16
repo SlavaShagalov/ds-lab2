@@ -14,11 +14,6 @@ stop:
 .PHONY: down
 down:
 	docker compose -f docker-compose.yml down -v
-	
-.PHONY: deploy
-deploy:
-	make stop
-	make up
 
 # ===== LOGS =====
 service = api
